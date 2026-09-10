@@ -1,0 +1,65 @@
+[
+  {
+    "id": "src_bandung",
+    "title": "The Bandung Conference, 1955",
+    "url": "https://history.state.gov/milestones/1953-1960/bandung-conf",
+    "authors": ["Office of the Historian"],
+    "citation": "Office of the Historian. The Bandung Conference, 1955.",
+    "kind": "secondary",
+    "published_year": null
+  },
+  {
+    "id": "src_nam",
+    "title": "History of the Non-Aligned Movement",
+    "url": "https://www.nam.go.ug/history",
+    "authors": ["Non-Aligned Movement"],
+    "citation": "Non-Aligned Movement. History of the Non-Aligned Movement.",
+    "kind": "secondary",
+    "published_year": null
+  },
+  {
+    "id": "src_un",
+    "title": "The United Nations and Decolonization",
+    "url": "https://www.un.org/dppa/decolonization/about",
+    "authors": ["United Nations"],
+    "citation": "United Nations. The United Nations and Decolonization.",
+    "kind": "secondary",
+    "published_year": null
+  },
+  {
+    "id": "src_g77",
+    "title": "About the Group of 77",
+    "url": "https://www.g77.org/doc/",
+    "authors": ["Group of 77"],
+    "citation": "Group of 77. About the Group of 77.",
+    "kind": "secondary",
+    "published_year": null
+  },
+  {
+    "id": "src_india",
+    "title": "India: Recognition and diplomatic relations",
+    "url": "https://history.state.gov/countries/india",
+    "authors": ["Office of the Historian"],
+    "citation": "Office of the Historian. India: Recognition and diplomatic relations.",
+    "kind": "secondary",
+    "published_year": null
+  },
+  {
+    "id": "src_ghana",
+    "title": "Admission of Ghana to the United Nations",
+    "url": "https://digitallibrary.un.org/record/646233",
+    "authors": ["UN General Assembly, 668th plenary meeting, 8 March 1957"],
+    "citation": "UN General Assembly, 668th plenary meeting, 8 March 1957. Admission of Ghana to the United Nations.",
+    "kind": "primary",
+    "published_year": null
+  },
+  {
+    "id": "src_algiers",
+    "title": "Fortieth anniversary ministerial declaration",
+    "url": "https://www.g77.org/40/declaration.htm",
+    "authors": ["Group of 77, 2004"],
+    "citation": "Group of 77, 2004. Fortieth anniversary ministerial declaration.",
+    "kind": "primary",
+    "published_year": null
+  }
+]

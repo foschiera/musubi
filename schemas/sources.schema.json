@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^src_[a-z0-9_]+$"
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1
+      },
+      "authors": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "published_year": {
+        "type": ["integer", "null"]
+      },
+      "url": {
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "string",
+            "pattern": "^https://"
+          }
+        ]
+      },
+      "citation": {
+        "type": "string",
+        "minLength": 1
+      },
+      "kind": {
+        "enum": ["primary", "secondary"]
+      }
+    },
+    "required": [
+      "id",
+      "title",
+      "authors",
+      "published_year",
+      "url",
+      "citation",
+      "kind"
+    ]
+  }
+}

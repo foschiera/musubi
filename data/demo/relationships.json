@@ -1,0 +1,101 @@
+[
+  {
+    "id": "rel_1",
+    "source_event_id": "evt_india",
+    "target_event_id": "evt_bandung",
+    "type": "enabled",
+    "directed": true,
+    "confidence": 4,
+    "description": "India participated in the Asian–African conference as an independent state.",
+    "perspective_ids": ["international", "afro_asian", "south_south"],
+    "source_ids": ["src_bandung"]
+  },
+  {
+    "id": "rel_2",
+    "source_event_id": "evt_bandung",
+    "target_event_id": "evt_belgrade",
+    "type": "influenced",
+    "directed": true,
+    "confidence": 5,
+    "description": "The movement traces its origins to Bandung and its principles.",
+    "perspective_ids": ["international", "afro_asian", "south_south"],
+    "source_ids": ["src_nam"]
+  },
+  {
+    "id": "rel_3",
+    "source_event_id": "evt_bandung",
+    "target_event_id": "evt_ghana",
+    "type": "influenced",
+    "directed": true,
+    "confidence": 2,
+    "description": "Editorial connection: Bandung and Ghana’s independence belong to a wider history of decolonization; this is not proof of direct causality.",
+    "perspective_ids": ["international", "afro_asian", "south_south"],
+    "source_ids": ["src_bandung"]
+  },
+  {
+    "id": "rel_4",
+    "source_event_id": "evt_ghana",
+    "target_event_id": "evt_declaration",
+    "type": "influenced",
+    "directed": true,
+    "confidence": 2,
+    "description": "Editorial connection: Ghana’s independence provides context for the broader decolonization agenda.",
+    "perspective_ids": ["international", "afro_asian", "south_south"],
+    "source_ids": ["src_ghana"]
+  },
+  {
+    "id": "rel_5",
+    "source_event_id": "evt_declaration",
+    "target_event_id": "evt_committee",
+    "type": "enabled",
+    "directed": true,
+    "confidence": 5,
+    "description": "The committee was established to monitor implementation of the declaration.",
+    "perspective_ids": ["international", "afro_asian", "south_south"],
+    "source_ids": ["src_un"]
+  },
+  {
+    "id": "rel_6",
+    "source_event_id": "evt_belgrade",
+    "target_event_id": "evt_g77",
+    "type": "influenced",
+    "directed": true,
+    "confidence": 2,
+    "description": "Editorial connection: non-alignment and the G77 offered distinct forums for cooperation among developing states.",
+    "perspective_ids": ["international", "afro_asian", "south_south"],
+    "source_ids": ["src_g77"]
+  },
+  {
+    "id": "rel_7",
+    "source_event_id": "evt_declaration",
+    "target_event_id": "evt_g77",
+    "type": "influenced",
+    "directed": true,
+    "confidence": 2,
+    "description": "Editorial connection: political self-determination and economic cooperation form a comparative research thread.",
+    "perspective_ids": ["international", "afro_asian", "south_south"],
+    "source_ids": ["src_g77"]
+  },
+  {
+    "id": "rel_8",
+    "source_event_id": "evt_g77",
+    "target_event_id": "evt_algiers",
+    "type": "enabled",
+    "directed": true,
+    "confidence": 5,
+    "description": "The Group’s first ministerial meeting adopted the Charter of Algiers.",
+    "perspective_ids": ["international", "afro_asian", "south_south"],
+    "source_ids": ["src_algiers"]
+  },
+  {
+    "id": "rel_9",
+    "source_event_id": "evt_bandung",
+    "target_event_id": "evt_declaration",
+    "type": "influenced",
+    "directed": true,
+    "confidence": 2,
+    "description": "Editorial connection: both addressed decolonization, through different institutions.",
+    "perspective_ids": ["international", "afro_asian", "south_south"],
+    "source_ids": ["src_un"]
+  }
+]

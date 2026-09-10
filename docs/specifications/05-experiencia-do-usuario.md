@@ -71,3 +71,13 @@ Cada área que consulta dados implementa:
 ## Telemetria do MVP
 
 Não há rastreamento de usuário. Logs técnicos do backend não armazenam consultas completas nem conteúdo de narrativas. Métricas de produto, se adicionadas depois, exigem revisão de privacidade e consentimento adequado.
+
+## Extensão do protótipo — grafo escuro e zoom semântico
+
+- **UX-20:** tema escuro em toda a aplicação; grafo dirigido por forças, com tamanho dos nós proporcional ao número de conexões e destaque da vizinhança ao passar o cursor.
+- **UX-21:** zoom entre 25% e 500%, por roda, gesto de pinça, botões ou teclado. Abaixo de 70%, priorizar conexões; de 70% a 220%, exibir títulos; a partir de 220%, revelar datas e cartão do evento selecionado com resumo e acesso a narrativas/fontes.
+- **UX-22:** duplo clique, tecla F ou botão no detalhe centralizam um evento. O foco permite escolher profundidade de uma ou duas conexões; eventos externos ficam esmaecidos, sem alterar o subgrafo da API ou a semântica das rotas. A vizinhança considera ambos os sentidos para exploração; o cálculo de caminhos continua respeitando direção.
+- **UX-23:** retornar à visão geral restaura a câmera anterior. Arrastar um nó fixa sua posição; redefinir o layout remove as fixações. Controles ajustam repulsão, distância de conexão, rótulos e setas.
+- **UX-24:** manter alternativa em lista e acesso por teclado; respeitar preferência por movimento reduzido. Foco/zoom e ajustes de layout são estados locais da sessão.
+
+Verificação: testes de navegador cobrem níveis de detalhe, foco, profundidade, retorno, fixação por arraste, ajustes de exibição e acesso ao detalhe a partir do celular. Auditoria automatizada de acessibilidade cobre a tela inicial escura.

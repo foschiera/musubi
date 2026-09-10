@@ -1,0 +1,66 @@
+{
+  "regions": [
+    {
+      "id": "south_asia",
+      "label": "South Asia",
+      "color": "#c08b42",
+      "description": "South Asia"
+    },
+    {
+      "id": "southeast_asia",
+      "label": "Southeast Asia",
+      "color": "#a97156",
+      "description": "Southeast Asia"
+    },
+    {
+      "id": "africa",
+      "label": "Africa",
+      "color": "#849564",
+      "description": "Africa"
+    },
+    {
+      "id": "latin_america",
+      "label": "Latin America",
+      "color": "#aa7180",
+      "description": "Latin America"
+    },
+    {
+      "id": "europe",
+      "label": "Europe",
+      "color": "#7c90a2",
+      "description": "Europe"
+    },
+    {
+      "id": "global",
+      "label": "International",
+      "color": "#857c9a",
+      "description": "International"
+    }
+  ],
+  "perspectives": [
+    {
+      "id": "international",
+      "label": "International",
+      "description": "International"
+    },
+    {
+      "id": "afro_asian",
+      "label": "Afro-Asian",
+      "description": "Afro-Asian"
+    },
+    {
+      "id": "south_south",
+      "label": "South–South",
+      "description": "South–South"
+    }
+  ],
+  "languages": ["en", "pt-BR", "fr", "ja"],
+  "relationship_types": [
+    "influenced",
+    "funded",
+    "conflicted",
+    "enabled",
+    "responded_to",
+    "contemporary_with"
+  ]
+}

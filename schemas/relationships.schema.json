@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^rel_[a-z0-9_]+$"
+      },
+      "source_event_id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "target_event_id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "type": {
+        "enum": [
+          "influenced",
+          "funded",
+          "conflicted",
+          "enabled",
+          "responded_to",
+          "contemporary_with"
+        ]
+      },
+      "directed": {
+        "type": "boolean"
+      },
+      "confidence": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 5
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 500
+      },
+      "perspective_ids": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "source_ids": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "required": [
+      "id",
+      "source_event_id",
+      "target_event_id",
+      "type",
+      "directed",
+      "confidence",
+      "description",
+      "perspective_ids",
+      "source_ids"
+    ]
+  }
+}

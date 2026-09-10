@@ -1,0 +1,239 @@
+[
+  {
+    "id": "evt_india",
+    "title": "India becomes independent",
+    "date": {
+      "start": "1947",
+      "end": "1947",
+      "precision": "year",
+      "circa": false
+    },
+    "region_ids": ["south_asia"],
+    "location": "New Delhi, India",
+    "summary": "India became independent on 15 August 1947.",
+    "source_ids": ["src_india"],
+    "layout": {
+      "x": 160,
+      "y": 280
+    },
+    "narratives": [
+      {
+        "id": "n1",
+        "perspective_id": "international",
+        "language": "en",
+        "text": "India became independent on 15 August 1947.",
+        "source_ids": ["src_india"]
+      }
+    ]
+  },
+  {
+    "id": "evt_bandung",
+    "title": "The Bandung Conference",
+    "date": {
+      "start": "1955",
+      "end": "1955",
+      "precision": "year",
+      "circa": false
+    },
+    "region_ids": ["southeast_asia"],
+    "location": "Bandung, Indonesia",
+    "summary": "Twenty-nine Asian and African governments met to discuss peace, development and decolonization.",
+    "source_ids": ["src_bandung"],
+    "layout": {
+      "x": 445,
+      "y": 280
+    },
+    "narratives": [
+      {
+        "id": "n1",
+        "perspective_id": "afro_asian",
+        "language": "en",
+        "text": "An Asian–African meeting placed decolonization and cooperation on a shared international agenda.",
+        "source_ids": ["src_bandung"]
+      },
+      {
+        "id": "n2",
+        "perspective_id": "international",
+        "language": "fr",
+        "text": "La conférence réunit des gouvernements d’Asie et d’Afrique autour de la paix et de la décolonisation.",
+        "source_ids": ["src_bandung"]
+      },
+      {
+        "id": "n3",
+        "perspective_id": "international",
+        "language": "ja",
+        "text": "アジアとアフリカの政府が、平和と脱植民地化について話し合った。",
+        "source_ids": ["src_bandung"]
+      },
+      {
+        "id": "n4",
+        "perspective_id": "south_south",
+        "language": "pt-BR",
+        "text": "Bandung criou um espaço de diálogo entre governos asiáticos e africanos sobre desenvolvimento e descolonização.",
+        "source_ids": ["src_bandung"]
+      }
+    ]
+  },
+  {
+    "id": "evt_ghana",
+    "title": "Ghana’s independence",
+    "date": {
+      "start": "1957",
+      "end": "1957",
+      "precision": "year",
+      "circa": false
+    },
+    "region_ids": ["africa"],
+    "location": "Accra, Ghana",
+    "summary": "Ghana celebrated independence on 6 March 1957 and joined the United Nations two days later.",
+    "source_ids": ["src_ghana"],
+    "layout": {
+      "x": 300,
+      "y": 440
+    },
+    "narratives": [
+      {
+        "id": "n1",
+        "perspective_id": "international",
+        "language": "en",
+        "text": "Ghana celebrated independence on 6 March 1957 and joined the United Nations two days later.",
+        "source_ids": ["src_ghana"]
+      }
+    ]
+  },
+  {
+    "id": "evt_declaration",
+    "title": "A declaration of independence",
+    "date": {
+      "start": "1960",
+      "end": "1960",
+      "precision": "year",
+      "circa": false
+    },
+    "region_ids": ["global"],
+    "location": "United Nations, New York",
+    "summary": "Resolution 1514 called for independence for colonial countries and peoples.",
+    "source_ids": ["src_un"],
+    "layout": {
+      "x": 620,
+      "y": 430
+    },
+    "narratives": [
+      {
+        "id": "n1",
+        "perspective_id": "international",
+        "language": "en",
+        "text": "Resolution 1514 called for independence for colonial countries and peoples.",
+        "source_ids": ["src_un"]
+      }
+    ]
+  },
+  {
+    "id": "evt_belgrade",
+    "title": "The Non-Aligned Movement",
+    "date": {
+      "start": "1961",
+      "end": "1961",
+      "precision": "year",
+      "circa": false
+    },
+    "region_ids": ["europe"],
+    "location": "Belgrade, Yugoslavia",
+    "summary": "The first summit formally established the Non-Aligned Movement.",
+    "source_ids": ["src_nam"],
+    "layout": {
+      "x": 680,
+      "y": 195
+    },
+    "narratives": [
+      {
+        "id": "n1",
+        "perspective_id": "international",
+        "language": "en",
+        "text": "The first summit formally established the Non-Aligned Movement.",
+        "source_ids": ["src_nam"]
+      }
+    ]
+  },
+  {
+    "id": "evt_committee",
+    "title": "Decolonization committee",
+    "date": {
+      "start": "1961",
+      "end": "1961",
+      "precision": "year",
+      "circa": false
+    },
+    "region_ids": ["global"],
+    "location": "United Nations, New York",
+    "summary": "The General Assembly established a special committee to monitor the 1960 declaration.",
+    "source_ids": ["src_un"],
+    "layout": {
+      "x": 855,
+      "y": 480
+    },
+    "narratives": [
+      {
+        "id": "n1",
+        "perspective_id": "international",
+        "language": "en",
+        "text": "The General Assembly established a special committee to monitor the 1960 declaration.",
+        "source_ids": ["src_un"]
+      }
+    ]
+  },
+  {
+    "id": "evt_g77",
+    "title": "The Global South finds a voice",
+    "date": {
+      "start": "1964",
+      "end": "1964",
+      "precision": "year",
+      "circa": false
+    },
+    "region_ids": ["latin_america", "africa", "south_asia"],
+    "location": "Geneva, Switzerland · interregional",
+    "summary": "Seventy-seven developing countries established the Group of 77 at the first UN conference on trade and development.",
+    "source_ids": ["src_g77"],
+    "layout": {
+      "x": 920,
+      "y": 270
+    },
+    "narratives": [
+      {
+        "id": "n1",
+        "perspective_id": "international",
+        "language": "en",
+        "text": "Seventy-seven developing countries established the Group of 77 at the first UN conference on trade and development.",
+        "source_ids": ["src_g77"]
+      }
+    ]
+  },
+  {
+    "id": "evt_algiers",
+    "title": "The Charter of Algiers",
+    "date": {
+      "start": "1967",
+      "end": "1967",
+      "precision": "year",
+      "circa": false
+    },
+    "region_ids": ["africa"],
+    "location": "Algiers, Algeria",
+    "summary": "The first ministerial meeting of the Group of 77 adopted the Charter of Algiers.",
+    "source_ids": ["src_algiers"],
+    "layout": {
+      "x": 1050,
+      "y": 120
+    },
+    "narratives": [
+      {
+        "id": "n1",
+        "perspective_id": "international",
+        "language": "en",
+        "text": "The first ministerial meeting of the Group of 77 adopted the Charter of Algiers.",
+        "source_ids": ["src_algiers"]
+      }
+    ]
+  }
+]

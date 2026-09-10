@@ -1,0 +1,8 @@
+vendor/
+node_modules/
+dist/
+build/
+test-results/
+docs/specifications/
+Musubi-Project_specifications.md
+package-lock.json
