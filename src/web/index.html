@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1f3634" />
+    <title>Musubi · Atlas de história</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script src="/assets/app.js" defer></script>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="Musubi, início"
+        ><span class="brand-mark">⠿</span> musubi<span class="brand-dot"
+          >.</span
+        ></a
+      >
+      <div class="sidebar-intro">
+        <span class="eyebrow">UM ATLAS DE CONEXÕES</span>
+        <h1>A história não<br />acontece sozinha.</h1>
+        <p>Encontre um evento. Siga suas relações. Descubra outros caminhos.</p>
+      </div>
+      <form id="search-form">
+        <label for="query">O que vamos explorar?</label>
+        <div class="search-input">
+          <input
+            id="query"
+            name="query"
+            type="search"
+            placeholder="Ex.: Revolução Francesa"
+            minlength="2"
+            maxlength="200"
+            required
+            autocomplete="off"
+          /><span aria-hidden="true">⌕</span>
+        </div>
+        <div class="search-options">
+          <label for="language">Idioma da fonte</label
+          ><select id="language">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+          </select>
+        </div>
+        <button class="primary" id="search-button" type="submit">
+          Buscar evento <span aria-hidden="true">↗</span>
+        </button>
+      </form>
+      <section class="results-section" aria-label="Resultados da busca">
+        <div class="section-label">
+          RESULTADOS <span id="result-count">—</span>
+        </div>
+        <p id="search-hint" class="muted">A busca começa com uma pergunta.</p>
+        <div id="results"></div>
+      </section>
+      <section class="recent-section">
+        <div class="section-label">NESTE DISPOSITIVO</div>
+        <div id="recent">
+          <p class="muted">Seus eventos importados aparecerão aqui.</p>
+        </div>
+      </section>
+      <footer class="sidebar-footer">
+        <span class="status-dot"></span> Conhecimento com origem<br /><small
+          >Wikipédia + Wikidata</small
+        >
+      </footer>
+    </aside>
+    <main>
+      <header class="topbar">
+        <div>
+          <span class="eyebrow">CADERNO DE EXPLORAÇÃO</span
+          ><span class="topbar-title">Atlas de história</span>
+        </div>
+        <a href="/docs" target="_blank" rel="noopener noreferrer"
+          >API <span aria-hidden="true">↗</span></a
+        >
+      </header>
+      <div id="notice" role="status" aria-live="polite" hidden></div>
+      <section class="workspace">
+        <div class="workspace-heading">
+          <div>
+            <span class="eyebrow">CONEXÕES QUE CONTAM HISTÓRIAS</span>
+            <h2 id="event-title">
+              Um ponto de partida.<br />Inúmeras conexões.
+            </h2>
+          </div>
+          <span id="event-tag" class="pill">EXPLORAR</span>
+        </div>
+        <div class="graph-card">
+          <div class="graph-topline">
+            <span><span class="status-dot"></span> MAPA DE CONHECIMENTO</span
+            ><span id="graph-count">Aguardando um evento</span>
+          </div>
+          <div id="empty-state">
+            <div class="empty-orbit" aria-hidden="true">
+              <i></i><i></i><i></i><b>m.</b>
+            </div>
+            <h3>Toda história tem conexões.</h3>
+            <p>
+              Busque um evento para descobrir os lugares, as datas e os
+              personagens que fazem parte dele.
+            </p>
+            <div class="suggestions">
+              <button type="button" data-query="Revolução Francesa">
+                Revolução Francesa ↗</button
+              ><button type="button" data-query="Independência do Brasil">
+                Independência do Brasil ↗
+              </button>
+            </div>
+            <small
+              >Os dados serão consultados e importados após sua seleção.</small
+            >
+          </div>
+          <svg
+            id="graph"
+            viewBox="0 0 1000 650"
+            role="group"
+            aria-label="Grafo do evento. Selecione uma conexão para ver sua fonte."
+            hidden
+          >
+            <g id="graph-layer"></g>
+          </svg>
+          <div class="graph-bottom">
+            <span id="graph-help"
+              >Explore a história, uma conexão de cada vez.</span
+            >
+            <div id="graph-controls" hidden>
+              <button id="zoom-out" aria-label="Diminuir zoom">−</button
+              ><button id="reset-view" aria-label="Centralizar grafo">⌾</button
+              ><button id="zoom-in" aria-label="Aumentar zoom">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="workspace-foot">
+          <span
+            ><i class="legend-dot"></i> Evento
+            <i class="legend-dot related"></i> Entidade
+            <i class="legend-dot date"></i> Data</span
+          ><span>As fontes são um ponto de partida para investigar.</span>
+        </div>
+      </section>
+      <section id="event-content" class="event-content" hidden>
+        <article class="overview">
+          <span class="eyebrow">CONTEXTO</span>
+          <h3>Por trás do evento</h3>
+          <p id="event-summary"></p>
+          <div id="source-links"></div>
+          <small id="attribution"></small>
+          <p class="data-note">
+            As relações reproduzem declarações das fontes e podem estar
+            incompletas ou em disputa. Não representam uma interpretação única
+            da história.
+          </p>
+        </article>
+        <aside class="details">
+          <span class="eyebrow">UMA CONEXÃO MAIS DE PERTO</span>
+          <h3 id="detail-title">Selecione uma conexão</h3>
+          <div id="detail-content">
+            <p>
+              Clique em um nó do grafo ou em uma relação abaixo para consultar
+              seus detalhes.
+            </p>
+          </div>
+        </aside>
+        <section class="connections">
+          <div class="connections-header">
+            <h3>Relações do evento</h3>
+            <span id="connection-count" class="pill"></span>
+          </div>
+          <div id="connections-list"></div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+*
+!requirements.txt
+!history/
+!history/*.py
+!web/
+!web/*
